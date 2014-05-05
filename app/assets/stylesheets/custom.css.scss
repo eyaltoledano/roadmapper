@@ -1,0 +1,212 @@
+@import 'bootstrap';
+
+/*Global*/
+
+.box-center {
+	max-width: 100%;
+    margin: 0 auto!important;
+    float: none!important;
+}
+
+.text-center {
+	vertical-align: center;
+}
+
+body {
+  color: #616161;
+  font: 1.4em Helvetica;
+  font-weight: 200;
+  background: #FAFAFA;
+   -webkit-backface-visibility: hidden;
+}
+
+a { 
+	display: block;
+}
+
+a.inline {
+    display: inline;
+}
+
+li {
+	list-style-type: none;
+}
+
+.no-margin-top {
+	margin-top: -55px;
+}
+
+/*Header*/
+
+#logo {
+	width: 24px;
+}
+
+/*Main Image*/
+
+.wide { 
+	text-align: left;
+	background: #3498db;
+	background-size: cover;
+	margin-bottom: 15px;
+	padding: 120px;
+	width: 139%;
+	height: 471px;
+	position: middle;
+	margin-top: -30px;
+	margin-left: -208px;
+	font-size: 1.5em;
+}
+
+.wide > h1 {
+	color: white;
+	font-size: 50px;
+}
+
+.wide > p {
+	color: white;
+}
+
+#main-cta {
+	padding: 15px;
+	width: 205px;
+	background: none;
+	border-width: 2px;
+	border-color: #2ecc71;
+	font-weight: 400;
+}
+
+#main-cta:hover {
+	background: #2ecc71;
+	color: #fff;
+	border-width: 2px;
+	border-color: #2ecc71;
+	font-weight: 500;
+}
+
+
+/*Navigation*/
+
+@media (min-width: 979px) {
+    body {
+        padding-top: 80px;
+    }
+}
+
+.navbar-brand img {
+	width: 145px;
+	margin-top: -3px;
+	margin-left: 5px;
+}
+
+#site-version {
+	margin: -10px;
+	margin-top: 17px;
+	padding-left: 5px;
+	position: fixed;
+}
+
+.nav-pills > li > a {
+	margin-top: 5px;
+}
+
+#nav {
+	opacity: 0.8;
+}
+
+/*Body*/
+
+.thumbs1 {
+	padding: 22px;
+	margin: -13px;
+}
+
+.homepanels {
+	border-color: #3498db;
+	border-width: 1px;
+}
+
+.homepanels:hover {
+	border-width: 2px;
+}
+
+.comic-pane {
+  width: 600px;
+  height: 220px;
+  top: 60px;
+  position: relative;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.text {
+  width: 320px;
+  height: 200px;
+  position: absolute;
+  left: 37px;
+  transform: skew(-15deg);
+  background: white;
+  box-shadow: 3px 5px 10px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+.text:before {
+  content: "";
+  dislay: block;
+  position: absolute;
+  height: 200px;
+  width: 60px;
+  left: -27px;
+  transform: skew(15deg);
+  background: white;
+  border-left: 1px solid rgba(0,0,0,0.05);
+   -webkit-backface-visibility: hidden;
+}
+
+.text p {
+  width: 260px;
+  line-height: 1.2em;
+  margin-top: 60px;
+  margin-left: 30px;
+  transform: skew(15deg);  
+}
+
+.comic-image {
+  width: 320px;
+  height: 200px;
+  right: -90px;
+  top: 0;
+  transform: skew(-15deg);
+  position: absolute;
+  overflow: hidden;
+} 
+
+.cimg {
+  display: block;
+  transform: skew(15deg);
+  width: 290px;
+  height: 200px;
+  position: absolute;
+  left: -27px;
+  top: 0;
+  background: url('http://nl.pcmweb.s3-eu-west-1.amazonaws.com/thumbnails/980/4fc56/GTA-V-Image.jpg');
+  background-size: cover;
+}
+
+/*Testimonials*/
+#testimonial-lead {
+	margin-top: 40px;
+}
+
+.testimonials {
+	margin-top: -60px;
+	margin: 0 auto;
+}
+
+/*About*/
+
+#pitch {
+	width: 100%;
+}
+
+/*Footer*/

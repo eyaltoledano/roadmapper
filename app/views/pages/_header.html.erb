@@ -1,0 +1,13 @@
+<nav id="nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+	<a class="navbar-brand" href="/"><%= image_tag "logo-lego.png", id: "logo" %><%= image_tag "logo.png" %></a><span id="site-version" class="label label-info">Pre-Alpha</span>
+	<div class="pull-right">
+		<ul class="nav nav-pills">
+			<li><%= link_to "Tour", pages_tour_path %></li>
+			<li><%= link_to "Pricing", pages_pricing_path %></li>
+			<li><%= link_to "About", pages_about_path %></li>
+			<li><a href="#">Sign Up</a></li>
+		</ul>
+	</div>
+  </div>
+</nav>
