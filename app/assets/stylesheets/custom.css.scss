@@ -42,6 +42,27 @@ li {
 	width: 24px;
 }
 
+.alert {
+	background: #2980b9;
+	color: white;
+}
+
+.cta:hover {
+	background: none;
+	border-width: 2px;
+	border-color: #2ecc71;
+	font-weight: 400;
+	color: #2ecc71;
+}
+
+.cta-danger:hover {
+	background: none;
+	border-width: 2px;
+	border-color: #e74c3c;
+	font-weight: 500;
+	color: #e74c3c;
+}
+
 /*Main Image*/
 
 .wide { 
@@ -100,10 +121,11 @@ li {
 }
 
 #site-version {
-	margin: -10px;
-	margin-top: 17px;
-	padding-left: 5px;
+	margin: 8px;
+	margin-top: 4px;
+	margin-right: 28px;
 	position: fixed;
+	font-size: 54%;
 }
 
 .nav-pills > li > a {

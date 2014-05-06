@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
  
+  devise_for :users
   root 'pages#index'
-  get 'pages/about'
-  get 'pages/pricing'
-  get 'pages/tour' 
-  get 'pages/help'
+  match '/about', to: 'pages#about', via: 'get'
+  match '/pricing', to: 'pages#pricing', via: 'get'
+  match '/tour', to: 'pages#tour', via: 'get'
+  match '/help', to: 'pages#help', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

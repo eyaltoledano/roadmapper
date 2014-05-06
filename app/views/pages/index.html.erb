@@ -4,14 +4,14 @@
 		<p class="lead text-center">Create beautiful, dynamic roadmaps that make it easy to know where your team's headed.</p>
 		<div class="row">
 			<div class="col-md-12">
-				<%= link_to 'Build a Roadmap', '#', class: 'btn btn-success btn-lg btn-block box-center', id: 'main-cta' %>
+				<%= link_to 'Build a Roadmap', new_user_registration_path, class: 'btn btn-success btn-lg btn-block box-center', id: 'main-cta' %>
 			</div>
 		</div>				
 	</section>
 		
 	<div class="row">
 		<div class="text-center">
-			<h2>Simply, speedy and powerful</h2>
+			<h2>Simple, speedy and powerful</h2>
 			<p>Roadmapper helps you create and upkeep design documents and roadmaps.</p>
 		</div>
 	</div>
@@ -26,7 +26,7 @@
 			    <h2>Plan</h2>
 				<li>Define your objectives and automatically generate a beautiful roadmap, clearly laid out timelines and reports.</li>
 				<br>
-				<a href="#">See how to Roadmapper helps you plan</a>
+				<%= link_to 'See how to Roadmapper helps you plan', tour_path %>
 			  </div>
 			</div>
 		</div>
@@ -36,7 +36,7 @@
 			    <h2>Visualize</h2>
 				<li>Your roadmap evolves as your team contributes to your project. Roadmapper speaks to Github to bring in your latest updates.</li>
 				<br>
-				<a href="#">See how Roadmapper visualizes your progress</a>
+				<%= link_to 'See how Roadmapper visualizes your progress', tour_path %>
 			  </div>
 			</div>
 		</div>
@@ -46,7 +46,7 @@
 			    <h2>Share</h2>
 				<li>Communicate your progress to employees, investors and customers so as to where you're headed.</li>
 				<br>
-				<a href="#">See how Roadmapper helps communicate</a>
+				<%= link_to 'See how Roadmapper helps communicate', tour_path %>
 			  </div>
 			</div>
 		</div>

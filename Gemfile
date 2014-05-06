@@ -14,6 +14,7 @@ gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 gem 'bootstrap-sass'
 
 gem 'devise'
+gem 'simple_form'
 
 group :development do
 	gem 'better_errors'
