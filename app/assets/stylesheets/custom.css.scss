@@ -233,6 +233,24 @@ li {
   cursor: pointer;
 }
 
+#tutorialcta {
+	padding: 15px;
+}
+
+.btn-green {
+color: #2ecc71;
+background-color: #fff;
+border-color: #2ecc71;
+border-width: 2px;
+}
+
+.btn-green:hover {
+color: #fff;
+background-color: #2ecc71;
+border-color: #2ecc71;
+border-width: 2px;
+}
+
 /*Testimonials*/
 #testimonial-lead {
 	margin-top: 40px;
