@@ -38,6 +38,14 @@ li {
 
 /*Header*/
 
+#signedin-header {
+	margin-top: -37px;
+}
+
+#signedin-header > span {
+	margin-top: -5px;
+}
+
 #logo {
 	width: 24px;
 }
@@ -234,7 +242,7 @@ li {
 }
 
 #tutorialcta {
-	padding: 15px;
+	cursor: pointer;
 }
 
 .btn-green {

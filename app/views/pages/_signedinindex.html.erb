@@ -1,39 +1,15 @@
 <div class="container-fluid">
-	<div class="page-header">
-	  <h1 class="text-center">Welcome <small>Username</small></h1>
-	</div>
-
-	<!-- Button trigger modal -->
-	<div class="row">
-		<div class="col-md-12 col-md-offset-5">
-			<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="tutorialcta">
-			  First time here?
-			</button>
-		</div>
-	</div>
-
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="tutorialModal" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h4 class="modal-title" id="tutorialModal">Welcome to Roadmapper</h4>
-	      </div>
-	      <div class="modal-body">
-	        <div class="text-center">
-	        	<h3>Congratulations!</h3>
-	        </div>
-			<p>You've taken the first step to answering the question: <strong>"Where is your startup going?"</strong></p><br/>
-			<p>Roadmapper was designed to help you see your projects more clearly. Because <strong>execution</strong> is the main determinant for whether an idea will blossom into success, Roadmapper was created to allow entrepreneurs, product designers and marketers to visualize the path to executing their vision, from a technical, marketing and visionary point of view.</p><br/>
-			<p>Roadmapper is...</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-green" data-dismiss="modal">Got it</button>
-	      </div>
-	    </div>
+	<div class="page-header text-center" id="signedin-header">
+	  <h1 class="inline">Welcome <small>Username</small></h1> 
+	  <div>
+			<span class="label label-success" data-toggle="modal" data-target="#myModal" id="tutorialcta">First time here?</span>
 	  </div>
 	</div>
+	<!-- Button trigger modal -->
+
+
+	<!-- Modal -->
+	<%= render partial: 'tutorialmodal' %>
 
 </div>
 
