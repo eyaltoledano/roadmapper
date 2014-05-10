@@ -1,0 +1,19 @@
+<nav id="nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+	<a class="navbar-brand" href="/"><% if user_signed_in? %><%= image_tag "logo-lego-gray.png", id: "logo" %><%= image_tag "logo.png" %><% else %><%= image_tag "logo-lego.png", id: "logo" %><%= image_tag "logo.png" %><span id="site-version" class="label label-info">Pre-Alpha</span><% end %></a>
+	<div class="pull-right">
+		<ul class="nav nav-pills">
+			<% if user_signed_in? %>
+			<li><%= link_to "Account Settings", edit_user_registration_path %></li>
+			<li><%= link_to "Sign Out", destroy_user_session_path,  :method => :delete, class: 'btn btn-danger cta-danger' %></li>
+			<% else %>
+			<li><%= link_to "Tour", tour_path %></li>
+			<li><%= link_to "Pricing", pricing_path %></li>
+			<li><%= link_to "About", about_path %></li>
+			<li><%= link_to "Sign In", new_user_session_path %></li>
+			<li><%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success cta' %></li>
+			<% end %>
+		</ul>
+	</div>
+  </div>
+</nav>

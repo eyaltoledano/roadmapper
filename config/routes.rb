@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
  
   devise_for :users
+  resources :users
   root 'pages#index'
   match '/about', to: 'pages#about', via: 'get'
   match '/pricing', to: 'pages#pricing', via: 'get'
