@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   match '/pricing', to: 'pages#pricing', via: 'get'
   match '/tour', to: 'pages#tour', via: 'get'
   match '/help', to: 'pages#help', via: 'get'
+  
+  # /sign_up is now /register
+  # devise_for :users, :path_names => { :sign_up => "register" }
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

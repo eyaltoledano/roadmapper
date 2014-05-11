@@ -253,9 +253,23 @@ border-width: 2px;
 }
 
 .btn-green:hover {
-color: #fff;
+color: #2ecc71;
 background-color: #2ecc71;
 border-color: #2ecc71;
+border-width: 2px;
+}
+
+.btn-blue {
+color: #3498db;
+background-color: #fff;
+border-color: #3498db;
+border-width: 2px;
+}
+
+.btn-blue:hover {
+color: #fff;
+background-color: #3498db;
+border-color: #3498db;
 border-width: 2px;
 }
 
