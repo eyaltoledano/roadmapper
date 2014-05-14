@@ -1,15 +1,46 @@
-<div class="container-fluid">
+<div class="container">
+<section>
 	<div class="page-header text-center" id="signedin-header">
 	  <h1 class="inline"><small>Welcome <%= current_user.name %>!</small></h1> 
 	  <div>
 			<span class="label label-success" data-toggle="modal" data-target="#myModal" id="tutorialcta">First time here?</span>
 	  </div>
 	</div>
+</section>
 	<!-- Button trigger modal -->
+<section>
+	<h1><%= current_user.name %>'s Roadmaps</h1>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="well btn box cta">
+				<p class="text-center roadmap-name">Roadmapper</p>
+				<p class="text-center">Company Roadmap</p>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="well btn box cta">
+				<p class="text-center roadmap-name">Roadmapper 0.1</p>
+				<p class="text-center">Tech Roadmap</p>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="well btn box cta">
+				<p class="text-center roadmap-name">Roadmapper</p>
+				<p class="text-center">Marketing Roadmap</p>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="well btn btn-default box new-roadmap cta" data-toggle="modal" data-target="#newRoadmap">
+				<h1 class="text-center lower"><span class="glyphicon glyphicon-plus-sign"></span></h1>
+	  		</div>
+		</div>
+	</div>
+</section>
 
 
 	<!-- Modal -->
 	<%= render partial: 'tutorialmodal' %>
+	<%= render partial: 'newroadmapmodal' %>
 
 </div>
 

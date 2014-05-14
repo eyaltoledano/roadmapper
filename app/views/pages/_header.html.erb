@@ -5,13 +5,13 @@
 		<ul class="nav nav-pills">
 			<% if user_signed_in? %>
 			<li><%= link_to "Account Settings", edit_user_registration_path %></li>
-			<li><%= link_to "Sign Out", destroy_user_session_path,  :method => :delete, class: 'btn btn-danger cta-danger' %></li>
+			<li><%= link_to "Sign Out", destroy_user_session_path,  :method => :delete, class: 'btn btn-danger cta-danger btn-xs', id: 'sign-out' %></li>
 			<% else %>
 			<li><%= link_to "Tour", tour_path %></li>
 			<li><%= link_to "Pricing", pricing_path %></li>
 			<li><%= link_to "About", about_path %></li>
-			<li><%= link_to "Sign In", new_user_session_path, class: 'btn btn-green' %></li>
-			<li><%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success cta' %></li>
+			<li><%= link_to "Sign In", new_user_session_path, class: 'btn btn-blue btn-xs', id: "sign-in" %></li>
+			<li><%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success cta btn-xs', id: "sign-up" %></li>
 			<% end %>
 		</ul>
 	</div>

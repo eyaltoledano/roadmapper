@@ -12,6 +12,10 @@
 	vertical-align: center;
 }
 
+.hover-white:hover {
+	color: white;
+}
+
 body {
   color: #616161;
   font: 1.4em Helvetica;
@@ -67,7 +71,6 @@ li {
 
 .cta-danger:hover {
 	background: none;
-	border-width: 2px;
 	border-color: #e74c3c;
 	font-weight: 500;
 	color: #e74c3c;
@@ -81,11 +84,15 @@ li {
 	background-size: cover;
 	margin-bottom: 15px;
 	padding: 120px;
-	width: 139%;
-	height: 471px;
+	width: auto;
+	height: 30%;
 	position: middle;
-	margin-top: -30px;
-	margin-left: -208px;
+	margin-top: -30%;
+	padding-top: 35%;
+	margin-left: -42%;
+	padding-left: 42%;
+	margin-right: -42%;
+	padding-right: 42%;
 	font-size: 1.5em;
 }
 
@@ -140,6 +147,10 @@ li {
 
 .nav-pills > li > a {
 	margin-top: 5px;
+}
+
+.nav-pills > li > a:hover {
+	color: #000;
 }
 
 #nav {
@@ -253,7 +264,7 @@ border-width: 2px;
 }
 
 .btn-green:hover {
-color: #2ecc71;
+color: #fff;
 background-color: #2ecc71;
 border-color: #2ecc71;
 border-width: 2px;
@@ -271,6 +282,45 @@ color: #fff;
 background-color: #3498db;
 border-color: #3498db;
 border-width: 2px;
+}
+
+#sign-in:hover {
+color: #fff!important;
+background-color: #3498db;
+}
+
+#sign-up:hover {
+color: #2ecc71!important;
+background: #fff;
+}
+
+#sign-out:hover {
+color: #d43f3a!important;
+}
+
+/*Signed in Index*/
+.box {
+ 	display: inline-block;
+ 	width: 100%;
+/* 	width: 275px;*/
+ 	height: 150px;
+ 	margin: 1em;
+}
+
+.new-roadmap {
+ 	display: inline-block;
+ 	height: 150px;
+ 	margin: 1em;
+}
+
+.roadmap-name {
+	margin-top: 15%;
+	color: #000;
+	font-size: 2em;
+}
+
+.lower {
+	margin-top: 20%;
 }
 
 /*Testimonials*/
