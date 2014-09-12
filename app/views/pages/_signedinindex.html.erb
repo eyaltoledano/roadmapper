@@ -30,6 +30,28 @@
 			</div>
 		</div>
 		<div class="col-md-3">
+			<div class="well box">
+				<span class="text-center">Progress</span>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-success" style="width: 100%" class="hint--right" data-hint="Company Vision Progress">
+				    <span class="sr-only">Complete</span>
+				  </div>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress active" style="width: 100%" class="hint--right" data-hint="Engineering Progress">
+				    <span class="sr-only">In spec</span>
+				  </div>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-danger" style="width: 100%" class="hint--right" data-hint="Marketing Progress">
+				    <span class="sr-only">Dev</span>
+				  </div>
+				</div>
+	  		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
 			<div class="well btn btn-default box new-roadmap cta" data-toggle="modal" data-target="#newRoadmap">
 				<h1 class="text-center lower"><span class="glyphicon glyphicon-plus-sign"></span></h1>
 	  		</div>
@@ -37,10 +59,16 @@
 	</div>
 </section>
 
+<div class="row">
+	Hello Sir, <span class="hint--bottom" data-hint="Thank you!">hover me.</span>
+</div>
+
+
 
 	<!-- Modal -->
 	<%= render partial: 'tutorialmodal' %>
 	<%= render partial: 'newroadmapmodal' %>
 
 </div>
+
 

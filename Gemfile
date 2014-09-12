@@ -22,3 +22,8 @@ group :development do
 	gem 'binding_of_caller'
 end
 
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
+
